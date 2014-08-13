@@ -2,8 +2,21 @@
 
 @import "recycling";
 
+body {
+  background: $beige;
+}
+
 p.bold {
   font-weight: 900;
+}
+
+a {
+  color: $blue;
+  border-bottom: dotted 1px $blue;
+  &:hover {
+    color: $blue;
+    border-bottom: solid 1px $blue;
+  }
 }
 
 .landing-page {
