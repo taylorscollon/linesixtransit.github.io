@@ -1,0 +1,88 @@
+@import "../_bower_components/foundation/scss/foundation.scss";
+
+@import "recycling";
+
+p.bold {
+  font-weight: 900;
+}
+
+.landing-page {
+  background: $beige;
+  h2, p, label, input {
+    color: $blue;
+    font-family: $brandon;
+  }
+  h2 {
+    font-weight: 900;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  label {
+    font-size: 1.2em;
+  }
+}
+
+.landing-container {
+  @extend .row;
+}
+
+.landing-content {
+  @extend .columns;
+  @extend .medium-9;
+  @extend .small-12;
+  @extend .small-centered;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  img {
+    text-align: center;
+    width: 80px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 3em;
+  }
+}
+
+.landing-links {
+  text-align: center;
+  a {
+    font-family: $brandon;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: $blue;
+    margin-top: 2em;
+    border-bottom: dotted 1px $blue;
+    &:hover {
+      border-bottom: solid 1px $blue;
+    }
+  }
+}
+
+.prelaunch-form {
+  border: solid 4px $blue;
+  padding: 2em;
+  background: white;
+  input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: dotted 1px rgba($blue,0.5);
+    height: 50px;
+    font-size: 1.2em;
+    &:focus {
+      background: none;
+      border: none;
+      box-shadow: none;
+      border-bottom: solid 1px $blue;
+    }
+  }
+}
+
+.button-default {
+  @include button(none,$blue);
+  border: solid 1px $blue;
+  &:hover {
+    background: $blue;
+    color: white;
+  }
+}

@@ -1,0 +1,18 @@
+$beige: #F6D5A4;
+$green: #B0CEB3;
+$blue: #1B215F;
+
+$brandon: "brandon-grotesque", sans-serif;
+
+.hide {
+  display: none;
+}
+
+@mixin button($background, $color) {
+  background: $background;
+  color: $color;
+  padding: 20px 35px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.2em;
+}
